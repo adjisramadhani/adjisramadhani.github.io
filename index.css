@@ -65,6 +65,11 @@
   padding: 0;
 }
 
+i:hover {
+  transform: scale(1.2); /* Membesarkan sedikit */
+  transition: transform 0.3s ease; /* Animasi halus */
+}
+
 @media screen and (max-width: 576px) {
   /* XS */
   body {
@@ -91,6 +96,14 @@
     margin-top: 23px;
     font-size: 15px;
   }
+  .bg-two {
+    background-image: url("adjis_new.jpg");
+  /*  opacity: 0.5;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* 672 */
@@ -105,6 +118,14 @@
   .leftside, .buttonside {
     text-align: center;
   }
+  .bg-two {
+    background-image: url("adjis_new.jpg");
+  /*  opacity: 0.5;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* 880 */
@@ -118,6 +139,14 @@
   }
   .leftside, .buttonside {
     text-align: center;
+  }
+  .bg-two {
+    background-image: url("adjis_new.jpg");
+  /*  opacity: 0.5;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -146,6 +175,14 @@
     margin-top: 25px;
     font-size: 15px;
   }
+  .bg-two {
+    background-image: url("adjis_new.jpg");
+  /*  opacity: 0.5;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* 1300 */
@@ -173,6 +210,14 @@
     margin-top: 25px;
     font-size: 15px;
   }
+  .bg-two {
+    background-image: url("adjis_new.jpg");
+  /*  opacity: 0.5;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 @media screen and (min-width: 1401px) {
@@ -197,6 +242,14 @@
   .desc {
     margin-top: 30px;
     font-size: 15px;
+  }
+  .bg-two {
+    background-image: url("adjis_new.jpg");
+  /*  opacity: 0.5;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
