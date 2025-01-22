@@ -222,6 +222,44 @@
           margin: 0; /* Menghapus margin default */
           padding: 0; /* Menghapus padding default */
         }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .skills-list {
+                gap: 10px;
+            }
+
+            .skill-item {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+
+            .portfolio-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav .logo a {
+                font-size: 18px;
+            }
+
+            .hero {
+                padding: 40px 10px;
+            }
+
+            .hero h1 {
+                font-size: 1.2rem;
+            }
+
+            .skill-item h5 {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
