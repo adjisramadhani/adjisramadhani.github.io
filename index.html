@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <style>
-        body {
+        /* body {
             font-family: 'Roboto', sans-serif;
             background-color: #f8f9fa;
         }
@@ -30,6 +30,35 @@
             font-size: 24px;
             color: white;
             text-decoration: none;
+        } */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        header nav .logo a {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+        header nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav .nav-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        header nav .nav-link:hover {
+            color: #ddd;
         }
         .hero {
             background: url('https://klaxos.com/wp-content/uploads/2017/12/writer-desk.jpg') no-repeat center center;
@@ -240,6 +269,20 @@
             .portfolio-card {
                 flex: 1 1 100%;
                 max-width: 100%;
+            }
+
+            header nav {
+                flex-wrap: wrap;
+            }
+            header nav .logo {
+                flex: 1 1 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
             }
         }
 
