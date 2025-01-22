@@ -178,7 +178,7 @@
         
         /* Timeline Styling */
         
-        .timeline {
+        /* .timeline {
             position: relative;
             padding: 20px 0;
         }
@@ -189,7 +189,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background-color: #6c757d; /* Line color */
+            background-color: #6c757d;
         }
         .timeline-item {
             position: relative;
@@ -197,15 +197,15 @@
             margin-bottom: 20px;
         }
         .timeline-item::before {
-            content: none; /* Menghilangkan pseudo-element */
+            content: none; 
             position: absolute;
             left: -9px;
             top: 12px;
             width: 18px;
             height: 18px;
             border-radius: 50%;
-            background-color: #6c757d; /* Circle color */
-            border: 3px solid white; /* Circle border color */
+            background-color: #6c757d;
+            border: 3px solid white;
         }
         .timeline-content {
             background-color: #fff;
@@ -228,6 +228,52 @@
             border-radius: 5px;
             text-decoration: none;
             margin-top: 30px;
+        } */
+
+        /* Timeline Responsiveness */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #6c757d;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .timeline-item .timeline-content {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 auto; 
+            max-width: 600px; 
+        }
+
+        .timeline-item::before {
+            content: none; 
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 12px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #6c757d;
+            border: 3px solid white;
         }
 
         /* Styling untuk badge */
@@ -272,23 +318,64 @@
             }
 
             header nav {
-                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column; /* Mengatur elemen anak agar vertikal */
+                align-items: center;   /* Pusatkan elemen */
             }
             header nav .logo {
-                flex: 1 1 100%;
+                flex: 1 1 auto;
                 text-align: center;
                 margin-bottom: 10px;
             }
             header nav ul {
-                flex-direction: column;
+                flex-direction: row; /* Ubah menjadi kolom untuk daftar menu */
                 align-items: center;
                 gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            header nav ul li {
+                margin: 5px 0; /* Beri jarak antar item menu */
+            }
+
+            .timeline::before {
+                left: 50%;
+            }
+
+            .timeline-item {
+                padding-left: 0; /* Hapus padding kiri */
+            }
+
+            .timeline-item .timeline-content {
+                max-width: 90%; /* Gunakan hampir seluruh lebar layar */
             }
         }
 
         @media (max-width: 480px) {
-            header nav .logo a {
+            /* header nav .logo a {
                 font-size: 18px;
+            } */
+
+            /* ini yang baru */
+            header nav {
+                display: flex;
+                flex-direction: column; /* Mengatur elemen anak agar vertikal */
+                align-items: center;   /* Pusatkan elemen */
+            }
+            header nav .logo {
+                flex: 1 1 auto;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            header nav ul {
+                flex-direction: row; /* Ubah menjadi kolom untuk daftar menu */
+                align-items: center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            header nav ul li {
+                margin: 5px 0; /* Beri jarak antar item menu */
             }
 
             .hero {
