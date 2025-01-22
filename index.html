@@ -1,270 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="index.css?0" />
-    <title>Adjis Ramadhani Utomo</title>
-  </head>
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta Description untuk SEO -->
+    <meta name="description" content="I'm Adjis Ramadhani Utomo, a Software Engineer with over 6 years of experience in PHP (Laravel, CodeIgniter), MySQL, PostgreSQL, Golang, and C++. Let's connect!">
+    <!-- Meta Tags untuk Open Graph (OG) di WhatsApp dan Media Sosial -->
+    <meta property="og:title" content="Adjis Ramadhani Utomo - Software Engineer">
+    <meta property="og:description" content="I'm Adjis Ramadhani Utomo, a Software Engineer with over 6 years of experience in PHP (Laravel, CodeIgniter), MySQL, PostgreSQL, Golang, and C++. Let's connect!">
+    <meta property="og:image" content="https://adjisramadhani.github.io/adjis_new.jpg"> <!-- Ganti dengan URL gambar profil -->
+    <meta property="og:url" content="https://adjisramadhani.github.io/">
+    <meta property="og:type" content="website">
 
-      document.getElementById('anu').addEventListener("click", function (e) {
-        document.getElementsByClassName('alert')[0].classList.remove("visually-hidden");
+    <title>Portfolio - Adjis Ramadhani Utomo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        header nav .logo a {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('https://klaxos.com/wp-content/uploads/2017/12/writer-desk.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 400px;  /* Atur tinggi agar tidak terlalu kecil */
+        }
 
-        setTimeout(() => {
-          document.getElementsByClassName('alert')[0].classList.add("visually-hidden");
-        }, 2000);
-      });
-    });
-  </script>
-  <body>
-    <div class="row hfull">
-      <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 bg-one" style="margin-top: -50px">
-        <div class="row hfull align-items-center justify-content-between">
-          <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 leftside">
-            <div class="fontbold greeting" style="color:white">Hi, I am</div>
-            <div class="fontbold name" style="color:white">Adjis Ramadhani Utomo</div>
-            <div class="fontbold job" style="color:white">Software Engineer | Delivering Scalable Solutions & Data-Driven Insights | Empowering Agile Collaboration</div>
-            <p class="fontreg desc" style="color:white">
-              I am a passionate Software Engineer with over 6 years of experience specializing in building robust and scalable web applications. My technical expertise spans across PHP (CodeIgniter, Laravel), JavaScript (ExtJS 4.2), and MySQL, with a strong focus on creating dynamic and interactive user interfaces.
-              In addition to software development, I have a deep interest in data analysis, data engineering, and data science. Currently, I am expanding my skills in C++ and Go to optimize performance and build high-performance systems.
-              I am driven by continuous learning, and I thrive on solving complex challenges while helping businesses leverage technology to reach their goals.
-              <br />
-              <br />
-              <br />
-            </p>
-            <p class="fontreg desc" style="color:white;">
-              Click the icon below to connect with me! 
-            </p>
-            <br />
-              <br />
-              <br />
-            <div class="row">
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="https://www.linkedin.com/in/adjis-ramadhani-utomo/"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="LinkedIn"
-                    type="button"
-                    class="btn btn-outline btn-lg"
-                  >
-                    <i class="fa-brands fa-linkedin fa-2x" style="color:white;"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="./portofolio_adjis_ramadhani_utomo.pdf"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Portfolio"
-                    type="button"
-                    class="btn btn-outline btn-lg"
-                  >
-                    <i class="fa-solid fa-briefcase fa-2x" style="color:white;"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="./cv_adjis_ramadhani_utomo.pdf"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Curriculum Vitae"
-                    type="button"
-                    class="btn btn-outline btn-lg"
-                  >
-                    <i class="fa-solid fa-file fa-2x" style="color:white;"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="col">
-                <button
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"
-                  data-bs-title="Email"
-                  type="button"
-                  class="btn btn-outline btn-lg"
-                  id="anu"
-                >
-                  <i class="fa-solid fa-envelope fa-2x" style="color:white;"></i>
-                </button>
-              </div>
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="https://github.com/adjisdhani"
-                  target="_blank"
-                >
-                <button
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"
-                  data-bs-title="Github"
-                  type="button"
-                  class="btn btn-outline btn-lg"
-                  id="anu"
-                >
-                  <i class="fa-brands fa-github fa-2x" style="color:white;"></i>
-                </button>
-              </div>
+        .hero h1 {
+            font-size: 3rem;
+        }
+        /* Styling untuk judul About Me */
+        #about h2 {
+            margin-bottom: 40px; /* Memberikan jarak bawah pada judul */
+        }
+
+        /* Styling untuk teks di dalam About Me */
+        #about p {
+            text-align: center; /* Menjadikan teks di tengah */
+            font-size: 1.2rem;  /* Ukuran font yang sedikit lebih besar */
+            margin-top: 20px;   /* Memberikan jarak atas agar tidak terlalu dekat dengan elemen lain */
+        }
+
+        /* Styling untuk list di About Me */
+        #about ul {
+            list-style-type: disc; /* Memberikan list dengan bullet */
+            margin-top: 20px; /* Memberikan jarak antara teks dan list */
+            padding-left: 20px; /* Memberikan padding agar list tidak menempel dengan tepi */
+        }
+
+        /* Styling untuk ikon-ikon sosial */
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            font-size: 30px;
+            margin: 0 15px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #0077b5; /* Ganti dengan warna yang sesuai untuk hover effect */
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .skill-item {
+            width: 20%;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-card {
+            width: 100%;
+            max-width: 300px;
+            margin: 15px;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .portfolio-card .card-body {
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #5a6268;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Timeline Styling */
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #6c757d; /* Line color */
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 20px;
+        }
+        .timeline-item::before {
+            content: none; /* Menghilangkan pseudo-element */
+            position: absolute;
+            left: -9px;
+            top: 12px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #6c757d; /* Circle color */
+            border: 3px solid white; /* Circle border color */
+        }
+        .timeline-content {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-content h5 {
+            margin-top: 0;
+        }
+        .timeline-content .date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        #view-more-button {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+
+        /* Styling untuk badge */
+        .card-body .badge {
+            margin-right: 10px; /* Memberikan jarak antar badge */
+            margin-bottom: 10px; /* Memberikan jarak antara badge dan tombol View More */
+        }
+
+        /* Styling untuk tombol View More */
+        .card-body .btn {
+            margin-top: 10px; /* Memberikan jarak atas antara tombol dan elemen sebelumnya */
+        }
+
+        .carousel-item img {
+            width: 100%; /* Agar gambar memenuhi lebar container */
+            height: auto; /* Menjaga proporsi gambar */
+        }
+
+        ul {
+          list-style-type: none; /* Menghilangkan bullets */
+          margin: 0; /* Menghapus margin default */
+          padding: 0; /* Menghapus padding default */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="#">Adjis Ramadhani Utomo</a>
             </div>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 buttonside" style="display:none">
-            <div class="row">
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="https://www.linkedin.com/in/adjis-ramadhani-utomo/"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Linkedin"
-                    type="button"
-                    class="btn btn-outline-dark btn-lg"
-                  >
-                    <i class="fa-brands fa-linkedin" style="color:white"></i>
-                  </button>
-                </a>
-              </div>
+            <ul class="nav">
+                <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="./portofolio_adjis_ramadhani_utomo.pdf"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Portfolio"
-                    type="button"
-                    class="btn btn-outline-dark btn-lg"
-                  >
-                    <i class="fa-solid fa-briefcase" style="color:white"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="col">
-                <a
-                  class="reset-style"
-                  href="./cv_adjis_ramadhani_utomo.pdf"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Curriculum Vitae"
-                    type="button"
-                    class="btn btn-outline-dark btn-lg"
-                  >
-                    <i class="fa-solid fa-file" style="color:white"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="col">
-                <button
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"
-                  data-bs-title="Email"
-                  type="button"
-                  class="btn btn-outline-dark btn-lg"
-                  id="anu"
-                >
-                  <i class="fa-solid fa-envelope" style="color:white"></i>
-                </button>
-              </div>
-              <div class="col" style="display:none">
-                <a
-                  class="reset-style"
-                  href="https://t.me/haiadjis"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Phone"
-                    type="button"
-                    class="btn btn-outline-dark btn-lg"
-                  >
-                    <i class="fa-brands fa-telegram" style="color:white"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="col" style="display:none">
-                <a
-                  class="reset-style"
-                  href="http://wa.me/6283135031400"
-                  target="_blank"
-                >
-                  <button
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    data-bs-title="Phone"
-                    type="button"
-                    class="btn btn-outline-dark btn-lg"
-                  >
-                    <i class="fa-solid fa-phone" style="color:white"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-            </symbol>
-          </svg>
-
-          <div class="alert alert-primary d-flex align-items-center visually-hidden" role="alert">
-            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-            <div>
-              My Email : adjisramadhani08@gmail.com
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero" style="display:none">
+        <div class="container">
+            <h1>Hello, I'm Adjis Ramadhani Utomo</h1>
+            <p>Software Engineer | PHP, Golang, C++, Web Development</p>
         </div>
-      </div>
-      <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 bg-two"></div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./adjis_new.jpg" alt="Adjis Ramadhani Utomo" class="img-fluid" width="300">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I'm a passionate Software Engineer with over 6 years of experience in building scalable, high-performance web applications and software solutions. I specialize in PHP and modern frameworks, with hands-on experience in backend development, database management, and more.
+                    </p>
+                    <p>
+                        In addition to my software development background, I have a strong interest in data analysis, data engineering, and data science. I am also expanding my skills in C++ and Go, focusing on performance optimization and building high-performance applications.
+                    </p>
+                    <p>
+                        I’m always eager to learn new technologies, solve complex problems, and contribute to open-source projects.
+                    </p>
+                    <p>
+                        Thank you for visiting my profile. I look forward to the opportunity to connect and collaborate on innovative projects in the near future!
+                    </p>
+                    <!-- Social and CV Links -->
+                    <div class="social-icons">
+                         <!-- Link ke GitHub -->
+                        <a href="https://github.com/adjisdhani" target="_blank" class="btn btn-outline-dark m-2">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <!-- Link ke LinkedIn -->
+                        <a href="https://id.linkedin.com/in/adjis-ramadhani-utomo" target="_blank" class="btn btn-outline-dark m-2">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="./cv_adjis_ramadhani_utomo.pdf" target="_blank" class="btn btn-outline-dark m-2">
+                            <i class="fa-solid fa-file-pdf"></i> Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="section">
+        <div class="container text-center">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>Software Engineer | PT KOLTIVA</h5>
+                        <p class="date">November 2020 - Present</p>
+                        <ul>
+                          <li>
+                            <p>Developed and managed APIs to ensure seamless integration between company systems, improving operational efficiency and reducing downtime.</p>
+                          </li>
+                          <li>
+                            <p>Updated and optimized existing dashboards, enhancing user experience and enabling faster, data-driven decision-making with clearer and more accurate data visualizations.</p>
+                          </li>
+                          <li>
+                            <p>Refined and improved the Enterprise Management System to enhance performance and scalability, allowing the company to handle larger data volumes more efficiently.</p>
+                          </li>
+                          <li>
+                            <p>Actively participated in Agile methodology adoption, collaborating with cross-functional teams to deliver high-quality software solutions on time.</p>
+                          </li>
+                          <li>
+                            <p>Improved application performance and response times by optimizing database queries and code, especially in ExtJS and JavaScript.</p>
+                          </li>
+                          <li>
+                            <p>Handled bugs and provided proactive technical support for existing applications, reducing operational disruptions by 30%.</p>
+                          </li>
+                          <li>
+                            <p>Strengthened application and API security by conducting audits and implementing best practices, ensuring better data protection.</p>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>Web Developer | PT Axiasolusi Indonesia</h5>
+                        <p class="date">February 2019 - October 2020</p>
+                        <p>Developed Web-Based Applications for HRIS and ERP Systems</p>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>Web Developer | PT Garda Cipta Sentosa</h5>
+                        <p class="date">Dec 2017 - July 2018</p>
+                        <p>Developed Web-Based Applications for Management Information System and Company Profile</p>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>Web Developer Intern | Ministry of Agriculture of the Republic of Indonesia</h5>
+                        <p class="date">August 2016 - September 2016</p>
+                        <p>Developed Web-Based Budget Monitoring Information System – PUSDATIN, Ministry of Agriculture, Republic of Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container text-center">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <!-- PHP & Laravel -->
+                <div class="skill-item">
+                    <i class="fab fa-php fa-3x"></i>
+                    <h5>PHP</h5>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brands fa-laravel fa-3x"></i>
+                    <h5>Laravel</h5>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code fa-3x"></i>
+                    <h5>CodeIgniter</h5>
+                </div>
+                
+                <!-- Databases -->
+                <div class="skill-item">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h5>MySQL</h5>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h5>SQL Server</h5>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h5>PostgreSQL</h5>
+                </div>
+                
+                <!-- JavaScript & Ext JS -->
+                <div class="skill-item">
+                    <i class="fab fa-js fa-3x"></i>
+                    <h5>JavaScript</h5>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js fa-3x"></i>
+                    <h5>Ext JS</h5>
+                </div>
+
+                <!-- Golang & C++ -->
+                <div class="skill-item">
+                    <i class="fab fa-brands fa-golang fa-3x"></i>
+                    <h5>Golang</h5>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-cuttlefish fa-3x"></i>
+                    <h5>C++</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h2>My Portfolio</h2>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="./project/project1.png" alt="MIS Koltitrace" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">MIS Koltitrace</h5>
+                            <p class="card-text">Management Information System at PT KOLTIVA</p>
+                            <!-- Badges for Technologies -->
+                            <span class="badge bg-primary">Codeigniter</span>
+                            <span class="badge bg-primary">Laravel</span>
+                            <span class="badge bg-success">JavaScript</span>
+                            <span class="badge bg-success">Ext JS</span>
+                            <span class="badge bg-warning">MySQL</span>
+                            <span class="badge bg-warning">PostgreSQL</span>
+                            <!-- View More Button -->
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="./project/project2.jpg" alt="HRIS" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">HRIS</h5>
+                            <p class="card-text">Human Resource Information System at PT Axiasolusi Indonesia</p>
+                            <!-- Badges for Technologies -->
+                            <span class="badge bg-primary">Codeigniter</span>
+                            <span class="badge bg-success">JavaScript</span>
+                            <span class="badge bg-warning">Sql Server</span>
+                            <!-- View More Button -->
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="./project/project3.jpg" alt="Company-Profile" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Company Profile</h5>
+                            <p class="card-text">Company Profile at PT Garda Cipta Sentosa</p>
+                            <!-- Badges for Technologies -->
+                            <span class="badge bg-primary">Codeigniter</span>
+                            <span class="badge bg-success">Javascript</span>
+                            <span class="badge bg-warning">MySQL</span>
+                            <!-- View More Button -->
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="./project/project4.jpg" alt="Monitoring-Manajemen" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Operational Management Monitoring Information System</h5>
+                            <p class="card-text">Operational Management Monitoring Information System at PT Garda Cipta Sentosa</p>
+                            <!-- Badges for Technologies -->
+                            <span class="badge bg-primary">PHP</span>
+                            <span class="badge bg-success">Javascript</span>
+                            <span class="badge bg-warning">MySQL</span>
+                            <!-- View More Button -->
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal4">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="./project/project5.jpg" alt="Budget-Monitoring" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Budget Monitoring Information System</h5>
+                            <p class="card-text">Budget Monitoring Information System at the Data and Information Center (PUSDATIN) of the Ministry of Agriculture, Republic of Indonesia</p>
+                            <!-- Badges for Technologies -->
+                            <span class="badge bg-primary">PHP</span>
+                            <span class="badge bg-success">Javascript</span>
+                            <span class="badge bg-warning">MySQL</span>
+                            <!-- View More Button -->
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal5">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="./project/project_freelance_1.jpg" alt="Event" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Information System</h5>
+                            <p class="card-text">Event Information System (Universitas AMIKOM Yogyakarta)</p>
+                            <!-- Badges for Technologies -->
+                            <span class="badge bg-primary">Codeigniter</span>
+                            <span class="badge bg-success">Javascript</span>
+                            <span class="badge bg-warning">MySQL</span>
+                            <!-- View More Button -->
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal6">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Portfolio Items... -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal1Label">MIS Koltitrace - Detailed View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="./project/project1.png" class="d-block w-100" alt="MIS Koltitrace 1">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="./project/project1_1.png" class="d-block w-100" alt="MIS Koltitrace 2">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Project Description -->
+                    <p>This application was created as an agricultural data tracking system at PT KOLTIVA. It was a front-end and backend development project. The main objective was to design and implement a scalable and secure API for the company's platform.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal2Label">HRIS - Detailed View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                     <!-- Carousel -->
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="./project/project2.jpg" class="d-block w-100" alt="HRIS 1">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="./project/project2_1.jpg" class="d-block w-100" alt="HRIS 2">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p>This is a detailed description of HRIS at PT Axiasolusi Indonesia. It was a front end and backend development project, using technologies such as Codeigniter, Javascript and MySQL. The main objective was to design and implement a scalable and secure API for the company's platform.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal3Label">Company Profile - Detailed View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="./project/project3.jpg" class="d-block w-100" alt="Company-Profile 1">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="./project/project3_1.jpg" class="d-block w-100" alt="Company-Profile 2">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p>This is a detailed description of Company Profile at PT Garda Cipta Sentosa. It was developed using CodeIgniter, Javascript, and MySQL. The goal of the project was to create an interactive dashboard for business users. The project followed a strict development timeline and was delivered ahead of schedule.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 4 -->
+    <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal4Label">Operational Management Monitoring Information System - Detailed View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="./project/project4.jpg" class="d-block w-100" alt="OMM 1">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="./project/project4_1.jpg" class="d-block w-100" alt="OMM 2">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p>This is a detailed description of Operational Management Monitoring Information System at PT Garda Cipta Sentosa. It was developed using PHP, Javascript, and MySQL. The project followed a strict development timeline and was delivered ahead of schedule.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 5 -->
+    <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal5Label">Budget Monitoring Information System - Detailed View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="./project/project5.jpg" class="d-block w-100" alt="BMI 1">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="./project/project5_1.jpg" class="d-block w-100" alt="BMI 2">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p>This is a detailed description of Budget Monitoring Information System at the Data and Information Center (PUSDATIN) of the Ministry of Agriculture, Republic of Indonesia. It was developed using PHP, Javascript, and MySQL. This application helps monitor the outgoing funds in PUSDATIN, ensuring they can be accounted for in the future.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 6 -->
+    <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal6Label">Event Information System - Detailed View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <!-- Carousel Inner -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="./project/project_freelance_1.jpg" class="d-block w-100" alt="BMI 1">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="./project/project_freelance_1_1.jpg" class="d-block w-100" alt="BMI 2">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p>This is a detailed description of Event Information System (Universitas AMIKOM Yogyakarta). It was developed using PHP, Javascript, and MySQL. his application is used to monitor event activities.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="social-media" class="section" style="display:none">
+        <div class="container text-center">
+            <h3>Connect with Me</h3>
+            <div class="social-icons">
+                <!-- Link ke GitHub -->
+                <a href="https://github.com/adjisdhani" target="_blank" class="btn btn-outline-dark m-2">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <!-- Link ke LinkedIn -->
+                <a href="https://www.linkedin.com/in/adjis-ramadhani-utomo/" target="_blank" class="btn btn-outline-dark m-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="mailto:adjisramadhani08@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Adjis Ramadhani Utomo | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS dan Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
